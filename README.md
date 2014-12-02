@@ -4,6 +4,8 @@ This is a Busybox-based fleetctl Docker container.
 Designed to be small in size so you can quickly and easily run fleet commands
 from other Docker containers without needing to install fleetctl in them.
 
+[Available from Docker Hub as `cap10morgan/fleetctl`](https://registry.hub.docker.com/u/cap10morgan/fleetctl/)
+
 ## Usage
 
 `docker run cap10morgan/fleetctl list-units`
