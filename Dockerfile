@@ -1,8 +1,8 @@
-FROM cap10morgan/busybase
-ENV FLEET_VERSION 0.9.0
+FROM cap10morgan/busybase:latest
+
+ENV FLEET_VERSION 0.9.1
 
 RUN \
-  mkdir -p /bin && \
   wget -P /tmp https://github.com/coreos/fleet/releases/download/v${FLEET_VERSION}/fleet-v${FLEET_VERSION}-linux-amd64.tar.gz && \
   gunzip /tmp/fleet-v${FLEET_VERSION}-linux-amd64.tar.gz && \
   tar -xf /tmp/fleet-v${FLEET_VERSION}-linux-amd64.tar -C /tmp && \
